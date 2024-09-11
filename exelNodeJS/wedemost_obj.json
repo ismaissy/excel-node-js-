@@ -1,0 +1,915 @@
+{
+    "salaryPayments": [
+        {
+            "id": "a1a7f061-6df1-4073-b419-7828206f157e",
+            "employeeId": 1002,
+            "registrationDate": "2024-08-10T00:00:00.000Z",
+            "workUnitId": "bbe9adea-8b8d-4ce9-b6c0-7d82cdaf9cf1",
+            "workedDays": 25,
+            "workedDutyHours": 162.5,
+            "workedNightHours": 66,
+            "workedHolidayHours": 16,
+            "night": 552.42,
+            "holiday": 267.84,
+            "harmfulness": 0,
+            "advance": 0,
+            "alimony": 0,
+            "dependentPay": 50,
+            "recalculated": null,
+            "totalSalary": 2720.25,
+            "totalWithheld": 655.02,
+            "totalAddPaid": 0,
+            "totalAddPositionPaid": 0,
+            "totalAccrued": 3540.51,
+            "totalOnHand": 2885.4900000000002,
+            "userId": "634dfa7c-9c57-4eb0-b318-d48fc190e708",
+            "createdAt": "2024-08-10T04:57:43.955Z",
+            "updatedAt": "2024-08-10T04:57:43.955Z",
+            "version": 0,
+            "employee": {
+                "id": 1002,
+                "firstName": "Suraý",
+                "lastName": "Poladowa",
+                "middleName": "Kerimowna",
+                "position": {
+                    "name": "Hirurgiýa bölümi Şepagat uýasy",
+                    "code": "2031",
+                    "departmentId": "43da78f6-d67f-4f8b-8e4c-388397f30164",
+                    "salary": 2938
+                }
+            },
+            "salaryPaymentAddPaids": [
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3000",
+                        "name": "Zähmet rugsady"
+                    }
+                },
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3010",
+                        "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
+                    }
+                }
+            ],
+            "salaryPaymentTaxes": [
+                {
+                    "amount": 331.35,
+                    "tax": {
+                        "code": "5000",
+                        "name": "Ýerillikli girdeji salgydy"
+                    }
+                },
+                {
+                    "amount": 106.22,
+                    "tax": {
+                        "code": "5002",
+                        "name": "Saglyk ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 70.81,
+                    "tax": {
+                        "code": "5001",
+                        "name": "Pensiýa ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 35.41,
+                    "tax": {
+                        "code": "5003",
+                        "name": "Kärdeşler arkalaşygyna töleg"
+                    }
+                },
+                {
+                    "amount": 35.41,
+                    "tax": {
+                        "code": "5004",
+                        "name": "Ýaşlar guramasy ýygymy"
+                    }
+                },
+                {
+                    "amount": 35.41,
+                    "tax": {
+                        "code": "5005",
+                        "name": "Lukmançylyk jemgyýeti salgydy"
+                    }
+                },
+                {
+                    "amount": 35.41,
+                    "tax": {
+                        "code": "5006",
+                        "name": "Demokratiýa partiýa ýygymy"
+                    }
+                },
+                {
+                    "amount": 5,
+                    "tax": {
+                        "code": "5007",
+                        "name": "Abadanlaşdyryş gaznasy"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "14bffe54-c75d-4144-86f5-23ecdd20d9a3",
+            "employeeId": 1003,
+            "registrationDate": "2024-08-19T00:00:00.000Z",
+            "workUnitId": "bbe9adea-8b8d-4ce9-b6c0-7d82cdaf9cf1",
+            "workedDays": 23,
+            "workedDutyHours": 154,
+            "workedNightHours": 0,
+            "workedHolidayHours": 0,
+            "night": 0,
+            "holiday": 0,
+            "harmfulness": 0,
+            "advance": 0,
+            "alimony": 0,
+            "dependentPay": 50,
+            "recalculated": null,
+            "totalSalary": 3354.09,
+            "totalWithheld": 841.82,
+            "totalAddPaid": 200,
+            "totalAddPositionPaid": 1088.2,
+            "totalAccrued": 4642.29,
+            "totalOnHand": 3800.47,
+            "userId": "634dfa7c-9c57-4eb0-b318-d48fc190e708",
+            "createdAt": "2024-08-19T09:57:01.416Z",
+            "updatedAt": "2024-08-19T09:57:01.416Z",
+            "version": 0,
+            "employee": {
+                "id": 1003,
+                "firstName": "Nursoltan",
+                "lastName": "Arazowa",
+                "middleName": "",
+                "position": {
+                    "name": "Baş hasapçy",
+                    "code": "2003",
+                    "departmentId": "1b9aafb3-1df0-48c2-b250-d8c54f4369a9",
+                    "salary": 3500
+                }
+            },
+            "salaryPaymentAddPaids": [
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3000",
+                        "name": "Zähmet rugsady"
+                    }
+                },
+                {
+                    "amount": 200,
+                    "additionalPaid": {
+                        "code": "3010",
+                        "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
+                    }
+                }
+            ],
+            "salaryPaymentTaxes": [
+                {
+                    "amount": 437.02,
+                    "tax": {
+                        "code": "5000",
+                        "name": "Ýerillikli girdeji salgydy"
+                    }
+                },
+                {
+                    "amount": 133.27,
+                    "tax": {
+                        "code": "5002",
+                        "name": "Saglyk ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 88.85,
+                    "tax": {
+                        "code": "5001",
+                        "name": "Pensiýa ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 44.42,
+                    "tax": {
+                        "code": "5003",
+                        "name": "Kärdeşler arkalaşygyna töleg"
+                    }
+                },
+                {
+                    "amount": 44.42,
+                    "tax": {
+                        "code": "5004",
+                        "name": "Ýaşlar guramasy ýygymy"
+                    }
+                },
+                {
+                    "amount": 44.42,
+                    "tax": {
+                        "code": "5005",
+                        "name": "Lukmançylyk jemgyýeti salgydy"
+                    }
+                },
+                {
+                    "amount": 44.42,
+                    "tax": {
+                        "code": "5006",
+                        "name": "Demokratiýa partiýa ýygymy"
+                    }
+                },
+                {
+                    "amount": 5,
+                    "tax": {
+                        "code": "5007",
+                        "name": "Abadanlaşdyryş gaznasy"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "4ad1bee5-5df2-4080-b68e-1227a5936172",
+            "employeeId": 1004,
+            "registrationDate": "2024-08-07T09:55:05.452Z",
+            "workUnitId": "bbe9adea-8b8d-4ce9-b6c0-7d82cdaf9cf1",
+            "workedDays": 21,
+            "workedDutyHours": 130,
+            "workedNightHours": 0,
+            "workedHolidayHours": 0,
+            "night": 0,
+            "holiday": 0,
+            "harmfulness": 0,
+            "advance": 0,
+            "alimony": 0,
+            "dependentPay": 50,
+            "recalculated": null,
+            "totalSalary": 3800,
+            "totalWithheld": 703,
+            "totalAddPaid": 0,
+            "totalAddPositionPaid": 0,
+            "totalAccrued": 3800,
+            "totalOnHand": 3097,
+            "userId": "634dfa7c-9c57-4eb0-b318-d48fc190e708",
+            "createdAt": "2024-08-07T09:55:05.452Z",
+            "updatedAt": "2024-08-07T09:55:05.452Z",
+            "version": 0,
+            "employee": {
+                "id": 1004,
+                "firstName": "Bibi",
+                "lastName": "Remezanowa",
+                "middleName": "",
+                "position": {
+                    "name": "Reanimasiýa bölümi Lukmany",
+                    "code": "2023",
+                    "departmentId": "a3ed2b46-fb41-4ec1-b4ab-11169eb94e9c",
+                    "salary": 3800
+                }
+            },
+            "salaryPaymentAddPaids": [
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3000",
+                        "name": "Zähmet rugsady"
+                    }
+                },
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3010",
+                        "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
+                    }
+                }
+            ],
+            "salaryPaymentTaxes": [
+                {
+                    "amount": 356,
+                    "tax": {
+                        "code": "5000",
+                        "name": "Ýerillikli girdeji salgydy"
+                    }
+                },
+                {
+                    "amount": 114,
+                    "tax": {
+                        "code": "5002",
+                        "name": "Saglyk ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 76,
+                    "tax": {
+                        "code": "5001",
+                        "name": "Pensiýa ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 38,
+                    "tax": {
+                        "code": "5003",
+                        "name": "Kärdeşler arkalaşygyna töleg"
+                    }
+                },
+                {
+                    "amount": 38,
+                    "tax": {
+                        "code": "5004",
+                        "name": "Ýaşlar guramasy ýygymy"
+                    }
+                },
+                {
+                    "amount": 38,
+                    "tax": {
+                        "code": "5005",
+                        "name": "Lukmançylyk jemgyýeti salgydy"
+                    }
+                },
+                {
+                    "amount": 38,
+                    "tax": {
+                        "code": "5006",
+                        "name": "Demokratiýa partiýa ýygymy"
+                    }
+                },
+                {
+                    "amount": 5,
+                    "tax": {
+                        "code": "5007",
+                        "name": "Abadanlaşdyryş gaznasy"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "7f1d9d16-a978-4b4a-86e9-2606c3bb5e45",
+            "employeeId": 1005,
+            "registrationDate": "2024-08-21T00:00:00.000Z",
+            "workUnitId": "bbe9adea-8b8d-4ce9-b6c0-7d82cdaf9cf1",
+            "workedDays": 22,
+            "workedDutyHours": 146,
+            "workedNightHours": 0,
+            "workedHolidayHours": 0,
+            "night": 0,
+            "holiday": 0,
+            "harmfulness": 400,
+            "advance": 400,
+            "alimony": 0,
+            "dependentPay": 50,
+            "recalculated": 3366,
+            "totalSalary": 4000,
+            "totalWithheld": 1278.75,
+            "totalAddPaid": 350,
+            "totalAddPositionPaid": 0,
+            "totalAccrued": 4750,
+            "totalOnHand": 3471.25,
+            "userId": "634dfa7c-9c57-4eb0-b318-d48fc190e708",
+            "createdAt": "2024-08-21T11:50:43.874Z",
+            "updatedAt": "2024-08-21T11:50:43.874Z",
+            "version": 0,
+            "employee": {
+                "id": 1005,
+                "firstName": "Baýram",
+                "lastName": "Hümmedow",
+                "middleName": "",
+                "position": {
+                    "name": "Radiologiýa bölümi Lukmany",
+                    "code": "2022",
+                    "departmentId": "406f7e7a-5eed-47c2-b6bd-04672c768c0b",
+                    "salary": 4000
+                }
+            },
+            "salaryPaymentAddPaids": [
+                {
+                    "amount": 350,
+                    "additionalPaid": {
+                        "code": "3000",
+                        "name": "Zähmet rugsady"
+                    }
+                },
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3010",
+                        "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
+                    }
+                }
+            ],
+            "salaryPaymentTaxes": [
+                {
+                    "amount": 446.25,
+                    "tax": {
+                        "code": "5000",
+                        "name": "Ýerillikli girdeji salgydy"
+                    }
+                },
+                {
+                    "amount": 142.5,
+                    "tax": {
+                        "code": "5002",
+                        "name": "Saglyk ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 95,
+                    "tax": {
+                        "code": "5001",
+                        "name": "Pensiýa ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 47.5,
+                    "tax": {
+                        "code": "5003",
+                        "name": "Kärdeşler arkalaşygyna töleg"
+                    }
+                },
+                {
+                    "amount": 47.5,
+                    "tax": {
+                        "code": "5004",
+                        "name": "Ýaşlar guramasy ýygymy"
+                    }
+                },
+                {
+                    "amount": 47.5,
+                    "tax": {
+                        "code": "5005",
+                        "name": "Lukmançylyk jemgyýeti salgydy"
+                    }
+                },
+                {
+                    "amount": 47.5,
+                    "tax": {
+                        "code": "5006",
+                        "name": "Demokratiýa partiýa ýygymy"
+                    }
+                },
+                {
+                    "amount": 5,
+                    "tax": {
+                        "code": "5007",
+                        "name": "Abadanlaşdyryş gaznasy"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "1fc85ed3-e558-4c15-9777-f76806302a49",
+            "employeeId": 1006,
+            "registrationDate": "2024-08-19T00:00:00.000Z",
+            "workUnitId": "bbe9adea-8b8d-4ce9-b6c0-7d82cdaf9cf1",
+            "workedDays": 25,
+            "workedDutyHours": 179,
+            "workedNightHours": 0,
+            "workedHolidayHours": 0,
+            "night": 0,
+            "holiday": 0,
+            "harmfulness": 0,
+            "advance": 400,
+            "alimony": 0,
+            "dependentPay": 50,
+            "recalculated": null,
+            "totalSalary": 2720.25,
+            "totalWithheld": 899.34,
+            "totalAddPaid": 375,
+            "totalAddPositionPaid": 0,
+            "totalAccrued": 3095.25,
+            "totalOnHand": 2195.91,
+            "userId": "634dfa7c-9c57-4eb0-b318-d48fc190e708",
+            "createdAt": "2024-08-19T09:46:09.375Z",
+            "updatedAt": "2024-08-19T09:46:09.375Z",
+            "version": 0,
+            "employee": {
+                "id": 1006,
+                "firstName": "Merjen",
+                "lastName": "Welowowa",
+                "middleName": "",
+                "position": {
+                    "name": "Hasapçy",
+                    "code": "2004",
+                    "departmentId": "1b9aafb3-1df0-48c2-b250-d8c54f4369a9",
+                    "salary": 1947
+                }
+            },
+            "salaryPaymentAddPaids": [
+                {
+                    "amount": 200,
+                    "additionalPaid": {
+                        "code": "3000",
+                        "name": "Zähmet rugsady"
+                    }
+                },
+                {
+                    "amount": 175,
+                    "additionalPaid": {
+                        "code": "3010",
+                        "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
+                    }
+                }
+            ],
+            "salaryPaymentTaxes": [
+                {
+                    "amount": 289.92,
+                    "tax": {
+                        "code": "5000",
+                        "name": "Ýerillikli girdeji salgydy"
+                    }
+                },
+                {
+                    "amount": 87.61,
+                    "tax": {
+                        "code": "5002",
+                        "name": "Saglyk ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 58.41,
+                    "tax": {
+                        "code": "5001",
+                        "name": "Pensiýa ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 29.2,
+                    "tax": {
+                        "code": "5003",
+                        "name": "Kärdeşler arkalaşygyna töleg"
+                    }
+                },
+                {
+                    "amount": 29.2,
+                    "tax": {
+                        "code": "5004",
+                        "name": "Ýaşlar guramasy ýygymy"
+                    }
+                },
+                {
+                    "amount": 0,
+                    "tax": {
+                        "code": "5005",
+                        "name": "Lukmançylyk jemgyýeti salgydy"
+                    }
+                },
+                {
+                    "amount": 0,
+                    "tax": {
+                        "code": "5006",
+                        "name": "Demokratiýa partiýa ýygymy"
+                    }
+                },
+                {
+                    "amount": 5,
+                    "tax": {
+                        "code": "5007",
+                        "name": "Abadanlaşdyryş gaznasy"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "595d21c6-71b6-4dff-a03c-d51501dc75f8",
+            "employeeId": 1007,
+            "registrationDate": "2024-08-15T00:00:00.000Z",
+            "workUnitId": "bbe9adea-8b8d-4ce9-b6c0-7d82cdaf9cf1",
+            "workedDays": 27,
+            "workedDutyHours": 179,
+            "workedNightHours": 0,
+            "workedHolidayHours": 0,
+            "night": 0,
+            "holiday": 0,
+            "harmfulness": 0,
+            "advance": 0,
+            "alimony": 0,
+            "dependentPay": 50,
+            "recalculated": null,
+            "totalSalary": 5000,
+            "totalWithheld": 925,
+            "totalAddPaid": 0,
+            "totalAddPositionPaid": 0,
+            "totalAccrued": 5000,
+            "totalOnHand": 4075,
+            "userId": "634dfa7c-9c57-4eb0-b318-d48fc190e708",
+            "createdAt": "2024-08-15T04:26:29.477Z",
+            "updatedAt": "2024-08-15T04:26:29.477Z",
+            "version": 0,
+            "employee": {
+                "id": 1007,
+                "firstName": "Mergen",
+                "lastName": "Berdiyew",
+                "middleName": "Bakyyewic",
+                "position": {
+                    "name": "Müdir",
+                    "code": "2000",
+                    "departmentId": "1b9aafb3-1df0-48c2-b250-d8c54f4369a9",
+                    "salary": 5000
+                }
+            },
+            "salaryPaymentAddPaids": [
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3000",
+                        "name": "Zähmet rugsady"
+                    }
+                },
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3010",
+                        "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
+                    }
+                }
+            ],
+            "salaryPaymentTaxes": [
+                {
+                    "amount": 470,
+                    "tax": {
+                        "code": "5000",
+                        "name": "Ýerillikli girdeji salgydy"
+                    }
+                },
+                {
+                    "amount": 150,
+                    "tax": {
+                        "code": "5002",
+                        "name": "Saglyk ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 100,
+                    "tax": {
+                        "code": "5001",
+                        "name": "Pensiýa ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 50,
+                    "tax": {
+                        "code": "5003",
+                        "name": "Kärdeşler arkalaşygyna töleg"
+                    }
+                },
+                {
+                    "amount": 50,
+                    "tax": {
+                        "code": "5004",
+                        "name": "Ýaşlar guramasy ýygymy"
+                    }
+                },
+                {
+                    "amount": 50,
+                    "tax": {
+                        "code": "5005",
+                        "name": "Lukmançylyk jemgyýeti salgydy"
+                    }
+                },
+                {
+                    "amount": 50,
+                    "tax": {
+                        "code": "5006",
+                        "name": "Demokratiýa partiýa ýygymy"
+                    }
+                },
+                {
+                    "amount": 5,
+                    "tax": {
+                        "code": "5007",
+                        "name": "Abadanlaşdyryş gaznasy"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "b19d87ac-343c-45c1-9351-307b10ba5d64",
+            "employeeId": 1008,
+            "registrationDate": "2024-08-17T00:00:00.000Z",
+            "workUnitId": "bbe9adea-8b8d-4ce9-b6c0-7d82cdaf9cf1",
+            "workedDays": 26,
+            "workedDutyHours": 179,
+            "workedNightHours": 0,
+            "workedHolidayHours": 0,
+            "night": 0,
+            "holiday": 0,
+            "harmfulness": 0,
+            "advance": 500,
+            "alimony": 0,
+            "dependentPay": 50,
+            "recalculated": 5022,
+            "totalSalary": 2888.86,
+            "totalWithheld": 1104.91,
+            "totalAddPaid": 0,
+            "totalAddPositionPaid": 380.87,
+            "totalAccrued": 3269.73,
+            "totalOnHand": 2164.8199999999997,
+            "userId": "634dfa7c-9c57-4eb0-b318-d48fc190e708",
+            "createdAt": "2024-08-17T04:48:42.584Z",
+            "updatedAt": "2024-08-17T04:48:42.584Z",
+            "version": 0,
+            "employee": {
+                "id": 1008,
+                "firstName": "Uzuk",
+                "lastName": "Annayewa",
+                "middleName": "",
+                "position": {
+                    "name": "Işgärler bölümi",
+                    "code": "2011",
+                    "departmentId": "1b9aafb3-1df0-48c2-b250-d8c54f4369a9",
+                    "salary": 2827
+                }
+            },
+            "salaryPaymentAddPaids": [
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3000",
+                        "name": "Zähmet rugsady"
+                    }
+                },
+                {
+                    "amount": 0,
+                    "additionalPaid": {
+                        "code": "3010",
+                        "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
+                    }
+                }
+            ],
+            "salaryPaymentTaxes": [
+                {
+                    "amount": 305.63,
+                    "tax": {
+                        "code": "5000",
+                        "name": "Ýerillikli girdeji salgydy"
+                    }
+                },
+                {
+                    "amount": 98.09,
+                    "tax": {
+                        "code": "5002",
+                        "name": "Saglyk ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 65.39,
+                    "tax": {
+                        "code": "5001",
+                        "name": "Pensiýa ätiýaçlandyrmasy"
+                    }
+                },
+                {
+                    "amount": 32.7,
+                    "tax": {
+                        "code": "5003",
+                        "name": "Kärdeşler arkalaşygyna töleg"
+                    }
+                },
+                {
+                    "amount": 32.7,
+                    "tax": {
+                        "code": "5004",
+                        "name": "Ýaşlar guramasy ýygymy"
+                    }
+                },
+                {
+                    "amount": 32.7,
+                    "tax": {
+                        "code": "5005",
+                        "name": "Lukmançylyk jemgyýeti salgydy"
+                    }
+                },
+                {
+                    "amount": 32.7,
+                    "tax": {
+                        "code": "5006",
+                        "name": "Demokratiýa partiýa ýygymy"
+                    }
+                },
+                {
+                    "amount": 5,
+                    "tax": {
+                        "code": "5007",
+                        "name": "Abadanlaşdyryş gaznasy"
+                    }
+                }
+            ]
+        }
+    ],
+    "salaryPaymentTotals": {
+        "totalSalary": 24483.45,
+        "night": 552.42,
+        "holiday": 267.84,
+        "totalAddPositionPaid": 1469.0700000000002,
+        "recalculated": null,
+        "harmfulness": 400,
+        "advance": 1300,
+        "totalWithheld": 6407.84,
+        "totalAccrued": 28097.78,
+        "totalOnHand": 21689.94,
+        "addPaidsTotals": [
+            {
+                "code": "3000",
+                "name": "Zähmet rugsady",
+                "total": 550
+            },
+            {
+                "code": "3010",
+                "name": "Ýarawsyzlyk",
+                "total": 375
+            },
+            {
+                "code": "3011",
+                "name": "TEST",
+                "total": 37
+            }
+        ],
+        "taxesTotals": [
+            {
+                "code": "5000",
+                "name": "Ýerillikli girdeji salgydy",
+                "total": 2636.17
+            },
+            {
+                "code": "5002",
+                "name": "Saglyk ätiýaçlandyrmasy",
+                "total": 831.69
+            },
+            {
+                "code": "5001",
+                "name": "Pensiýa ätiýaçlandyrmasy",
+                "total": 554.46
+            },
+            {
+                "code": "5003",
+                "name": "Kärdeşler arkalaşygyna töleg",
+                "total": 277.23
+            },
+            {
+                "code": "5004",
+                "name": "Ýaşlar guramasy ýygymy",
+                "total": 277.23
+            },
+            {
+                "code": "5005",
+                "name": "Lukmançylyk jemgyýeti salgydy",
+                "total": 248.03000000000003
+            },
+            {
+                "code": "5006",
+                "name": "Demokratiýa partiýa ýygymy",
+                "total": 248.02999999999997
+            },
+            {
+                "code": "5007",
+                "name": "Abadanlaşdyryş gaznasy",
+                "total": 35
+            }
+        ]
+    }
+}
