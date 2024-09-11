@@ -52,6 +52,13 @@
                         "code": "3010",
                         "name": "Ýarawsyzlyk"
                     }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
+                    }
                 }
             ],
             "salaryPaymentTaxes": [
@@ -110,6 +117,20 @@
                         "code": "5007",
                         "name": "Abadanlaşdyryş gaznasy"
                     }
+                },
+                {
+                    "amount": 88,
+                    "tax": {
+                        "code": "5008",
+                        "name": "H2 Test"
+                    }
+                },
+                {
+                    "amount": 83,
+                    "tax": {
+                        "code": "5008",
+                        "name": "H2 Test"
+                    }
                 }
             ]
         },
@@ -164,6 +185,13 @@
                     "additionalPaid": {
                         "code": "3010",
                         "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
                     }
                 }
             ],
@@ -223,6 +251,13 @@
                         "code": "5007",
                         "name": "Abadanlaşdyryş gaznasy"
                     }
+                },
+                {
+                    "amount": 84,
+                    "tax": {
+                        "code": "5008",
+                        "name": "H2 Test"
+                    }
                 }
             ]
         },
@@ -277,6 +312,13 @@
                     "additionalPaid": {
                         "code": "3010",
                         "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
                     }
                 }
             ],
@@ -336,6 +378,13 @@
                         "code": "5007",
                         "name": "Abadanlaşdyryş gaznasy"
                     }
+                },
+                {
+                    "amount": 85,
+                    "tax": {
+                        "code": "5008",
+                        "name": "H2 Test"
+                    }
                 }
             ]
         },
@@ -390,6 +439,13 @@
                     "additionalPaid": {
                         "code": "3010",
                         "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
                     }
                 }
             ],
@@ -449,6 +505,13 @@
                         "code": "5007",
                         "name": "Abadanlaşdyryş gaznasy"
                     }
+                },
+                {
+                    "amount": 86,
+                    "tax": {
+                        "code": "5008",
+                        "name": "H2 Test"
+                    }
                 }
             ]
         },
@@ -503,6 +566,13 @@
                     "additionalPaid": {
                         "code": "3010",
                         "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
                     }
                 }
             ],
@@ -562,6 +632,13 @@
                         "code": "5007",
                         "name": "Abadanlaşdyryş gaznasy"
                     }
+                },
+                {
+                    "amount": 87,
+                    "tax": {
+                        "code": "5008",
+                        "name": "H2 Test"
+                    }
                 }
             ]
         },
@@ -616,6 +693,13 @@
                     "additionalPaid": {
                         "code": "3010",
                         "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
                     }
                 }
             ],
@@ -675,6 +759,13 @@
                         "code": "5007",
                         "name": "Abadanlaşdyryş gaznasy"
                     }
+                },
+                {
+                    "amount": 88,
+                    "tax": {
+                        "code": "5008",
+                        "name": "H2 Test"
+                    }
                 }
             ]
         },
@@ -729,6 +820,13 @@
                     "additionalPaid": {
                         "code": "3010",
                         "name": "Ýarawsyzlyk"
+                    }
+                },
+                {
+                    "amount": 1,
+                    "additionalPaid": {
+                        "code": "3011",
+                        "name": "TEST"
                     }
                 }
             ],
@@ -788,6 +886,13 @@
                         "code": "5007",
                         "name": "Abadanlaşdyryş gaznasy"
                     }
+                },
+                {
+                    "amount": 89,
+                    "tax": {
+                        "code": "5008",
+                        "name": "H2 Test"
+                    }
                 }
             ]
         }
@@ -813,6 +918,11 @@
                 "code": "3010",
                 "name": "Ýarawsyzlyk",
                 "total": 375
+            },
+            {
+                "code": "3011",
+                "name": "TEST",
+                "total": 37
             }
         ],
         "taxesTotals": [
@@ -855,6 +965,11 @@
                 "code": "5007",
                 "name": "Abadanlaşdyryş gaznasy",
                 "total": 35
+            },
+            {
+                "code": "5008",
+                "name": "H2 Test",
+                "total": 99
             }
         ]
     }

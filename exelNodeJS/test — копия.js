@@ -3,14 +3,12 @@ const fs = require('fs').promises;
 const { getCellRange } = require("./mergeByIndex")
 
 
-
 const headerCode = [
     { code: "2000", name: "№" },
     { code: "2001", name: "Işgär ID" },
     { code: "2002", name: "Ady Familiýasy" },
     { code: "2003", name: "Wezipe" },
     { code: "2004", name: "Asyl aýlygy" },
-
     { code: "2005", name: "Işlan günleri" },
     { code: "2006", name: "Aýlyk" },
     { code: "2007", name: "Gijeki" },
@@ -31,7 +29,7 @@ const fistMonthData = [
     { name: "Gaýtadan hasaplama" },
     { name: "Zyýanlyk" },
     { name: "Jemi hasaplanan" },
-    // { name: "Hak ujy" }
+    { name: "Hak ujy" }
 ]
 
 const advance = { name: "Hak ujy", cell: 1 }
@@ -154,9 +152,9 @@ readAndProcessFile().then((json) => {
 
     });
 
-    // arr.map((e, i) => {
-    //     console.log([parseInt(arr[i].key, 10)])
-    // })
+    arr.map((e, i) => {
+        console.log([parseInt(arr[i].key, 10)])
+    })
 
 
 
@@ -309,7 +307,7 @@ readAndProcessFile().then((json) => {
 
     setBordersForActiveCells(sheet)
 
-    workbook.xlsx.writeFile('demo.xlsx').then(() => console.log('File saved'));
+    workbook.xlsx.writeFile('test.xlsx').then(() => console.log('File saved'));
 
 
 
