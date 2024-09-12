@@ -2,22 +2,6 @@ const ExcelJS = require('exceljs');
 const fs = require('fs').promises;
 
 
-const HEAD = {
-    head: "HASAPLAŞYK-TÖLEG WEDOMOSTY",
-    date: "2024-nji ýylyn Aprel aýy üçin",
-    director: {
-        label: "Direktor",
-        value: "M.A.Kakageldiýewa"
-    },
-    accountant: {
-        label: "Baş hasapçy",
-        value: "A.Arazowa"
-    }
-}
-
-
-const initialRow = 5;
-
 const H1 = [
     { code: "2000", name: "№" },
     { code: "2001", name: "Işgär ID" },
@@ -49,7 +33,7 @@ const H6 = [
 
 async function readAndProcessFile() {
     try {
-        const data = await fs.readFile("./wedemost_obj2.json", 'utf8');
+        const data = await fs.readFile("./wedemost_obj.json", 'utf8');
         const jsonData = JSON.parse(data);
         return jsonData;
     } catch (err) {
@@ -67,107 +51,89 @@ readAndProcessFile().then((json) => {
     const H3 = salaryPaymentTotals.addPaidsTotals;
     const H5 = salaryPaymentTotals.taxesTotals;
 
-
-
     // Create Key and Header
     let arr = [];
     const combinedData = H1.concat(H2, H3, H4, H5, H6);
     combinedData.map((elem) => {
-        arr.push({
-            header: "",
-            key: elem.code,
-        })
+        if (elem.code === "2002" || elem.code === "2003") {
+            arr.push({
+                header: elem.name,
+                key: elem.code,
+                width: 30
+            })
+        } else {
+            arr.push({
+                header: elem.name,
+                key: elem.code,
+            })
+        }
     })
 
     // First Header
     const headerOneEndColumLength = H1.length + H2.length + H3.length + H4.length - 1;
 
-
-    // HEADER 4 zagalowk
-    let cell1 = sheet.getCell(2, 5);
-    cell1.value = HEAD.head;
-    cell1.alignment = { vertical: 'middle', horizontal: 'center' };
-    cell1.font = { name: 'Times New Roman', size: 12, bold: true };
-
-    let cell2 = sheet.getCell(3, 5);
-    cell2.value = HEAD.date;
-    cell2.alignment = { vertical: 'middle', horizontal: 'center' };
-    cell2.font = { name: 'Times New Roman', size: 10, bold: true };
-
-    let cell3 = sheet.getCell(2, headerOneEndColumLength + 1);
-    cell3.value = `${HEAD.director.label}_______________________${HEAD.director.value}`;
-    cell3.font = { name: 'Times New Roman', size: 10, bold: true };
-
-    let cell4 = sheet.getCell(3, headerOneEndColumLength + 1);
-    cell4.value = `${HEAD.accountant.label}_______________________${HEAD.accountant.value}`;
-    cell4.font = { name: 'Times New Roman', size: 10, bold: true };
-
     // Initial Headers
     H1.map((item, index) => {
         const position = index + 1;
-        sheet.getCell(initialRow, position).value = item.name;
+        sheet.getCell(1, position).value = item.name;
         if (item.code === "2000" || item.code === "2002" || item.code === "2003") {
-            let cell = sheet.getCell(initialRow, position);
+            let cell = sheet.getCell(1, position);
             cell.alignment = { vertical: 'middle', horizontal: 'center' };
-            cell.font = { name: 'Times New Roman', size: 11, bold: true };
+            cell.font = { size: 11, bold: true };
         } else {
-            let cell = sheet.getCell(initialRow, position);
+            let cell = sheet.getCell(1, position);
             cell.alignment = { textRotation: 90, vertical: 'middle', horizontal: 'center' };
-            cell.font = { name: 'Times New Roman', bold: true };
+            cell.font = { size: 11, bold: true };
         }
-
     })
-
- 
-    const rowPositionTwo = initialRow + 1;
-    sheet.mergeCells(`A${initialRow}:A${rowPositionTwo}`); // Initial Headers degishli H1
-    sheet.mergeCells(`B${initialRow}:B${rowPositionTwo}`); // Initial Headers degishli H1
-    sheet.mergeCells(`C${initialRow}:C${rowPositionTwo}`); // Initial Headers degishli H1
-    sheet.mergeCells(`D${initialRow}:D${rowPositionTwo}`); // Initial Headers degishli H1
-    sheet.mergeCells(`E${initialRow}:E${rowPositionTwo}`); // Initial Headers degishli H1
+    sheet.mergeCells('A1:A2'); // Initial Headers degishli H1
+    sheet.mergeCells('B1:B2'); // Initial Headers degishli H1
+    sheet.mergeCells('C1:C2'); // Initial Headers degishli H1
+    sheet.mergeCells('D1:D2'); // Initial Headers degishli H1
+    sheet.mergeCells('E1:E2'); // Initial Headers degishli H1
 
     H2.map((item, index) => {
         const position = H1.length + index + 1;
-        sheet.getCell(initialRow + 1, position).value = item.name;
-        let cell = sheet.getCell(initialRow + 1, position);
+        sheet.getCell(2, position).value = item.name;
+        let cell = sheet.getCell(2, position);
         cell.alignment = { textRotation: 90, vertical: 'middle', horizontal: 'center' };
-        cell.font = { name: 'Times New Roman', bold: true };
+        cell.font = { size: 11, bold: true };
     })
 
     const H3_STARTR = H1.length + H2.length
     H3.map((item, index) => {
         const position = H3_STARTR + index + 1;
-        sheet.getCell(initialRow + 1, position).value = item.name;
-        let cell = sheet.getCell(initialRow + 1, position);
+        sheet.getCell(2, position).value = item.name;
+        let cell = sheet.getCell(2, position);
         cell.alignment = { textRotation: 90, vertical: 'middle', horizontal: 'center' };
-        cell.font = { name: 'Times New Roman', bold: true };
+        cell.font = { size: 11, bold: true };
     })
 
     const H4_START = H3_STARTR + H3.length;
     H4.map((item, index) => {
         const position = H4_START + index + 1;
-        sheet.getCell(initialRow + 1, position).value = item.name;
-        let cell = sheet.getCell(initialRow + 1, position);
+        sheet.getCell(2, position).value = item.name;
+        let cell = sheet.getCell(2, position);
         cell.alignment = { textRotation: 90, vertical: 'middle', horizontal: 'center' };
-        cell.font = { name: 'Times New Roman', bold: true };
+        cell.font = { size: 11, bold: true };
     })
 
     const H5_START = H4_START + H4.length;
     H5.map((item, index) => {
         const position = H5_START + index + 1;
-        sheet.getCell(initialRow + 1, position).value = item.name;
-        let cell = sheet.getCell(initialRow + 1, position);
+        sheet.getCell(2, position).value = item.name;
+        let cell = sheet.getCell(2, position);
         cell.alignment = { textRotation: 90, vertical: 'middle', horizontal: 'center' };
-        cell.font = { name: 'Times New Roman', bold: true };
+        cell.font = { size: 11, bold: true };
     })
 
     const H6_START = H5_START + H5.length;
     H6.map((item, index) => {
         const position = H6_START + index + 1;
-        sheet.getCell(initialRow + 1, position).value = item.name;
-        let cell = sheet.getCell(initialRow + 1, position);
+        sheet.getCell(2, position).value = item.name;
+        let cell = sheet.getCell(2, position);
         cell.alignment = { textRotation: 90, vertical: 'middle', horizontal: 'center' };
-        cell.font = { name: 'Times New Roman', bold: true };
+        cell.font = { size: 11, bold: true };
     })
 
     // Maglumatyny (salgytlaryny) goshyars her useryn
@@ -192,7 +158,7 @@ readAndProcessFile().then((json) => {
             ["2015"]: checkValue(elem.totalOnHand),//  jemi tutylan totalOnHand
         });
         elem.salaryPaymentAddPaids.map((paid) => row.getCell(paid.additionalPaid.code).value = checkValue(paid.amount))
-        elem.salaryPaymentTaxes.map((taxe) => row.getCell(taxe.tax.code).value = checkValue(taxe.amount))
+        elem.salaryPaymentTaxes.map((taxe) => row.getCell(taxe.tax.code, 10).value = checkValue(taxe.amount))
     });
 
     // JEMI goshyars
@@ -209,32 +175,31 @@ readAndProcessFile().then((json) => {
         ["2015"]: checkValue(salaryPaymentTotals.totalOnHand), // jemi tutylan totalOnHand
     });
     salaryPaymentTotals.addPaidsTotals.map((t) => row.getCell(t.code).value = checkValue(t.total))
-    salaryPaymentTotals.taxesTotals.map((taxe) => row.getCell(taxe.code).value = checkValue(taxe.total))
+    salaryPaymentTotals.taxesTotals.map((taxe) => row.getCell(taxe.code, 10).value = checkValue(taxe.total))
 
     row.eachCell((cell) => {
         cell.font = { bold: true };
     });
 
-    const rowLengthJemi = salaryPayments.length + 2 + initialRow; //startColumn, startRow, endColumn, endRow
+    const rowLengthJemi = salaryPayments.length + 3
     sheet.mergeCells(getCellRange(1, rowLengthJemi, 6, rowLengthJemi));
-    sheet.getCell(rowLengthJemi, 1).value = 'Jemi';
+    sheet.getCell(rowLengthJemi, 1).value = '   Jemi';
     sheet.getCell(rowLengthJemi, 1).style = {
         font: {
-            name: 'Times New Roman',
+            size: 11,
             bold: true,
             color: { argb: 'FF000000' }
         },
     }
 
-    sheet.mergeCells(getCellRange(H1.length + 1, initialRow, headerOneEndColumLength, initialRow));
-    sheet.getCell(initialRow, H1.length + 1).value = 'Häzirki aý üçin zahmet tölegleri gaznasyndan hasaplanany';
-    sheet.getCell(initialRow, H1.length + 1).alignment = { vertical: 'middle', horizontal: 'center' };
-    sheet.getCell(initialRow, H1.length + 1).style = {
+    sheet.mergeCells(getCellRange(H1.length + 1, 1, headerOneEndColumLength, 1));
+    sheet.getCell(1, H1.length + 1).value = 'Häzirki aý üçin zahmet tölegleri gaznasyndan hasaplanany';
+    sheet.getCell(1, H1.length + 1).alignment = { vertical: 'middle', horizontal: 'center' };
+    sheet.getCell(1, H1.length + 1).style = {
         font: {
             size: 11,
             bold: true,
-            color: { argb: 'FF000000' },
-            name: 'Times New Roman'
+            color: { argb: 'FF000000' }
         },
         alignment: {
             vertical: 'middle',
@@ -246,15 +211,14 @@ readAndProcessFile().then((json) => {
     const headerTwoStartColumLength = H1.length + H2.length + H3.length + H4.length;
     const headerTwoEndColumLength = H1.length + H2.length + H3.length + H4.length + H5.length + H6.length;
 
-    sheet.mergeCells(getCellRange(headerTwoStartColumLength, initialRow, headerTwoEndColumLength, initialRow));
-    sheet.getCell(initialRow, headerTwoStartColumLength).value = 'Tutylan we bergiň ujyndan hasaplanany';
-    sheet.getCell(initialRow, headerTwoStartColumLength).alignment = { vertical: 'middle', horizontal: 'center' };
-    sheet.getCell(initialRow, headerTwoStartColumLength).style = {
+    sheet.mergeCells(getCellRange(headerTwoStartColumLength, 1, headerTwoEndColumLength, 1));
+    sheet.getCell(1, headerTwoStartColumLength).value = 'Tutylan we bergiň ujyndan hasaplanany';
+    sheet.getCell(1, headerTwoStartColumLength).alignment = { vertical: 'middle', horizontal: 'center' };
+    sheet.getCell(1, headerTwoStartColumLength).style = {
         font: {
             size: 11,
             bold: true,
-            color: { argb: 'FF000000' },
-            name: 'Times New Roman',
+            color: { argb: 'FF000000' }
         },
         alignment: {
             vertical: 'middle',
@@ -262,14 +226,14 @@ readAndProcessFile().then((json) => {
         }
     }
 
-
+    // Tablisiyalaryn (TABLE) liniyasyny chyzmak uchin 
     const setBordersForActiveCells = (sheet) => {
         const range = sheet.getCell('A1').address;
         const rowCount = sheet.rowCount;
         const colCount = sheet.columnCount;
         let minRow = Infinity, maxRow = -Infinity, minCol = Infinity, maxCol = -Infinity;
 
-        for (let row = initialRow; row <= rowCount; row++) {
+        for (let row = 1; row <= rowCount; row++) {
             for (let col = 1; col <= colCount; col++) {
                 const cell = sheet.getCell(row, col);
                 if (cell.value !== undefined && cell.value !== null) {
@@ -295,10 +259,7 @@ readAndProcessFile().then((json) => {
     };
     setBordersForActiveCells(sheet)
 
-    // Padding start and end columns
-    autoFitColumns(sheet, (initialRow + 2), (initialRow + 2 + salaryPayments.length));
-
-    workbook.xlsx.writeFile('termination2.xlsx').then(() => console.log('File saved'));
+    workbook.xlsx.writeFile('termination.xlsx').then(() => console.log('File saved'));
 })
 
 function getColumnLetter(index) {
@@ -319,29 +280,6 @@ function checkValue(value) {
     return (value === 0 || !value) ? "" : value.toFixed(2);
 }
 
-
-function autoFitColumns(worksheet, startRow, endRow) {
-    //const startRow = 8; // Начальная строка
-    //const endRow = 14;  // Конечная строка
-    // Собираем максимальную длину для каждого столбца в указанном диапазоне строк
-    const columnLengths = {};
-    for (let row = startRow; row <= endRow; row++) {
-        const rowData = worksheet.getRow(row);
-        rowData.eachCell({ includeEmpty: true }, (cell, colNumber) => {
-            const cellValue = cell.value ? cell.value.toString() : '';
-            if (!columnLengths[colNumber]) {
-                columnLengths[colNumber] = 0;
-            }
-            columnLengths[colNumber] = Math.max(columnLengths[colNumber], cellValue.length);
-        });
-    }
-    // Устанавливаем ширину столбцов в зависимости от максимальной длины содержимого
-    worksheet.columns.forEach((column, colNumber) => {
-        if (columnLengths[colNumber + 1] !== undefined) { // Индекс столбца начинается с 1
-            column.width = columnLengths[colNumber + 1] + 1; // Добавляем 2 для отступа
-        }
-    });
-}
 
 
 module.exports = readAndProcessFile;
