@@ -50,7 +50,7 @@ const H6 = [
 
 async function readAndProcessFile() {
     try {
-        const data = await fs.readFile("../json/wedemost_obj1.json", 'utf8');
+        const data = await fs.readFile("./json/wedemost_obj1.json", 'utf8');
         const jsonData = JSON.parse(data);
         return jsonData;
     } catch (err) {
@@ -78,6 +78,18 @@ readAndProcessFile().then((json) => {
             header: "",
             key: elem.code,
         })
+        // if (elem.code === "2002" || elem.code === "2003") {
+        //     arr.push({
+        //         header: "",
+        //         key: elem.code,
+        //         width: 100
+        //     })
+        // } else {
+        //     arr.push({
+        //         header: "",
+        //         key: elem.code,
+        //     })
+        // }
     })
 
     // First Header
@@ -119,7 +131,7 @@ readAndProcessFile().then((json) => {
 
     })
 
- 
+
     const rowPositionTwo = initialRow + 1;
     sheet.mergeCells(`A${initialRow}:A${rowPositionTwo}`); // Initial Headers degishli H1
     sheet.mergeCells(`B${initialRow}:B${rowPositionTwo}`); // Initial Headers degishli H1
@@ -297,9 +309,12 @@ readAndProcessFile().then((json) => {
     setBordersForActiveCells(sheet)
 
     // Padding start and end columns
+    // autoFitColumns(sheet, (initialRow + 1), (initialRow + 2));
     autoFitColumns(sheet, (initialRow + 2), (initialRow + 2 + salaryPayments.length));
 
-    workbook.xlsx.writeFile('termination3.xlsx').then(() => console.log('File saved'));
+
+    const date = new Date()
+    workbook.xlsx.writeFile(`termination_4${date.getFullYear()}.xlsx`).then(() => console.log('File saved'));
 })
 
 function getColumnLetter(index) {
@@ -333,7 +348,13 @@ function autoFitColumns(worksheet, startRow, endRow) {
             if (!columnLengths[colNumber]) {
                 columnLengths[colNumber] = 0;
             }
-            columnLengths[colNumber] = Math.max(columnLengths[colNumber], cellValue.length);
+
+            if (cellValue) {
+                columnLengths[colNumber] = Math.max(columnLengths[colNumber], cellValue.length);
+            } else {
+                columnLengths[colNumber] = Math.max(columnLengths[colNumber], 3);
+            }
+
         });
     }
     // Устанавливаем ширину столбцов в зависимости от максимальной длины содержимого
