@@ -1,2 +1,0 @@
-const { readAndProcessFile } = require("./terminatiton")
-
